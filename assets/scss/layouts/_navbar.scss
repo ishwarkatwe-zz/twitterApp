@@ -1,0 +1,134 @@
+/*
+    NavBar Style
+*/
+/* 
+    Created on : 16 Sep, 2016, 7:48:04 PM
+    Author     : Ishwar Katwe
+*/
+
+header
+{
+    @include box-shadow(0px, 0px, 0px, 1px, $shadow);
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    background-color: $white;
+    height: $navHeight;
+    padding-right:15px;
+
+    div{
+        width: 50%;
+    }
+
+    .brand-logo{
+        figure{
+            margin: 0px;
+            padding:0px;
+            width:80px;
+            float:left;
+            a{
+                display: inline-block;
+                border-right:1px solid $shadow;
+                padding:15px;
+                img{
+                    width: 50px;
+                }
+            }
+        }
+
+        nav{
+            ul{
+                display: inline-block;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                li{
+                    height:80px;
+                    width:60px;
+                    float: left;
+                    text-align:center;
+                    a{
+                        line-height: 40px;
+                        border: 1px solid $gray;
+                        border-radius: 50%;
+                        width: 40px;
+                        height: 40px;
+                        display: inline-block;
+                        text-align: center;
+                        text-decoration: none;
+                        color: $dark-gray;
+                        margin: 20px 0px;
+                    }
+                    &:hover, &:active, &:focus{
+                        border-bottom: 1px solid $blue;
+                    }
+                }
+            }
+
+            @include respond-to(xs){
+                display: none;
+            }
+            @include respond-to(sm){
+                display: none;
+            }
+        }
+    }
+
+    .twitter-logo{
+        text-align:center;
+        a{
+            line-height: 40px;
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            color: $blue;
+            font-size: 40px;
+            margin: 20px 0px;
+        }
+    }
+
+    .search-box{
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+
+        .search-group{
+            width: 200px;
+            position:relative;
+            margin:0px 15px;
+
+            @include respond-to(xs){
+                display: none;
+            }
+            input{
+                width: 100%;
+                height: 40px;
+                border: 1px solid $gray;
+                border-radius: 25px;
+                text-indent: 10px;
+                color:$gray;
+                font-size: 16px;
+            }
+            i{
+                position: absolute;
+                right: 12px;
+                color:$gray;
+                top: 12px;
+            }
+        }
+        a.profile-image{
+            img{
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+}

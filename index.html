@@ -1,0 +1,145 @@
+<!--
+    Twitter App Design
+    @author : Ishwar Katwe
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Twitter App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- BASSCSS -->
+        <link href="https://npmcdn.com/basscss@8.0.1/css/basscss.min.css" rel="stylesheet">
+
+        <!--FONTAWSOME-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+
+        <!--CUSTOM CSS-->
+        <link rel="stylesheet" href="assets/css/style.css"/>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!--BEGIN HEADER-->
+        <header>
+            <div class="brand-logo">
+                <figure><a href="#"><img src="assets/img/logo.png" alt="Twitter App"/></a></figure>
+                <nav>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-bell"></i></a></li>
+                        <li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
+                        <li><a href="#"><i class="fa fa-hashtag"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="twitter-logo">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="search-box">
+                <div class="search-group">
+                    <input type="text" placeholder="Search"/>
+                    <i class="fa fa-search"></i>
+                </div>
+                <a class="profile-image" href="#"><img src="assets/img/user1.jpg" alt="dp"/></a>
+            </div>
+        </header>
+        <!--END HEADER-->
+        <!--BEGIN MAIN-->
+        <main class="container">
+            <div class="max-width-3 mx-auto">
+                <div class="clearfix">
+                    <!--BEGIN TAB MENU-->
+                    <ul class="tabs">
+                        <li class="active">
+                            <a href="#">
+                                <p>Tweets</p>
+                                <b>200</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Photo/videos</p>
+                                <b>200</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Following</p>
+                                <b>200</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Followers</p>
+                                <b>1M</b>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--END TAB MENU-->
+
+                    <!--BEGIN POST-->
+                    <section class="posts" id="posts">
+                        <!--POST BINDING FROM AJAX JSON-->
+                    </section>
+                    <!--BEGIN POST-->
+                </div>
+            </div>
+        </main>
+        <!--END MAIN-->
+
+        <!--JS SCRIPTS-->
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.js"></script>
+        <script src="assets/js/all.js"></script>
+        
+        <!--POST PLACEHOLDER TEMPLATE-->
+        <script type="text/html" id="template">
+            <article>
+                <figure class="post-user">
+                    <img src='${image}' alt="${name}">
+                </figure>
+                <div class="post-body">
+                    <div class="header">
+                        {{if refreshButton == 'Y'}}
+                        <a href="#" class="refresh"><i class="fa fa-refresh"></i></a>
+                        {{/if}}
+                        <h4>${name}</h4>
+                        <p>${alias}</p>
+                        <span class="timestamp">${date}</span>
+                    </div>
+                    {{if caption != ''}}
+                    <p class="caption">
+                        ${caption}
+                    </p>
+                    {{/if}}
+                    {{if video == 'Y'}}
+                    <div class="video">
+                        <a href="#">
+                            <figure>
+                                <img src='${videoPlaceholder}' alt="${name}" />
+                                <figcaption>
+                                    <span class="play-button"><i class="fa fa-play"></i></span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    {{/if}}
+                    <div class="icon-footer">
+                        <a href="#"><i class="fa fa-share"></i></a>
+                        <a href="#"><i class="fa fa-star"></i></a>
+                        <a href="#"><i class="fa fa-refresh"></i> ${refreshCount}</a>
+                        <a href="#"><i class="fa fa-ellipsis-h"></i></a>
+                        <a href="#" class="expand"><i class="fa fa-expand"></i></a>
+                    </div>
+                </div>
+        
+            </article>
+        </script>
+    </body>
+</html>

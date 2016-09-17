@@ -1,0 +1,25 @@
+/*
+    Global declaration
+*/
+/* 
+    Created on : 16 Sep, 2016, 7:48:04 PM
+    Author     : Ishwar Katwe
+*/
+body
+{
+    font-family: $font-primary;
+    background-color: $body-bg;
+    padding: 0px;
+    margin: 0px;
+}
+
+input
+{
+    font-family: $font-primary;
+    font-weight: 200;
+}
+
+
+.text-center{
+    text-align: center;
+}

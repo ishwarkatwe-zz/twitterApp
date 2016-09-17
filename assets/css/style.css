@@ -1,0 +1,342 @@
+/*
+    Scss Style Main File
+*/
+/* 
+    Created on : 15 Sep, 2016, 8:20:42 PM
+    Author     : Ishwar Katwe
+*/
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+/*Base*/
+/*
+    Predefined Scss variables
+*/
+/* 
+    Created on : 16 Sep, 2016, 7:48:04 PM
+    Author     : Ishwar Katwe
+*/
+/*Colors*/
+/*Shadow*/
+/*Font Family*/
+/*NavBar*/
+/*Post divider*/
+/*
+    Global declaration
+*/
+/* 
+    Created on : 16 Sep, 2016, 7:48:04 PM
+    Author     : Ishwar Katwe
+*/
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f2eee8;
+  padding: 0px;
+  margin: 0px; }
+
+input {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200; }
+
+.text-center {
+  text-align: center; }
+
+/*
+    Shadow Effect Mixin Function
+*/
+/* 
+    Created on : 16 Sep, 2016, 7:50:15 PM
+    Author     : Ishwar Katwe
+*/
+/*
+    Shadow Effect Mixin Function
+*/
+/* 
+    Created on : 16 Sep, 2016, 7:52:16 PM
+    Author     : Ishwar Katwe
+*/
+/*
+    Animation Effect Mixin Function
+*/
+/* 
+    Created on : 16 Sep, 2016, 7:51:10 PM
+    Author     : Ishwar Katwe
+*/
+/*
+    NavBar Style
+*/
+/* 
+    Created on : 16 Sep, 2016, 7:48:04 PM
+    Author     : Ishwar Katwe
+*/
+header {
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  background-color: #FFFFFF;
+  height: 80px;
+  padding-right: 15px; }
+  header div {
+    width: 50%; }
+  header .brand-logo figure {
+    margin: 0px;
+    padding: 0px;
+    width: 80px;
+    float: left; }
+    header .brand-logo figure a {
+      display: inline-block;
+      border-right: 1px solid rgba(0, 0, 0, 0.05);
+      padding: 15px; }
+      header .brand-logo figure a img {
+        width: 50px; }
+  header .brand-logo nav ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    header .brand-logo nav ul li {
+      height: 80px;
+      width: 60px;
+      float: left;
+      text-align: center; }
+      header .brand-logo nav ul li a {
+        line-height: 40px;
+        border: 1px solid #d0d0d0;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        color: #5f5f5f;
+        margin: 20px 0px; }
+      header .brand-logo nav ul li:hover, header .brand-logo nav ul li:active, header .brand-logo nav ul li:focus {
+        border-bottom: 1px solid #80a8cc; }
+  @media only screen and (max-width: 767px) {
+    header .brand-logo nav {
+      display: none; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    header .brand-logo nav {
+      display: none; } }
+  header .twitter-logo {
+    text-align: center; }
+    header .twitter-logo a {
+      line-height: 40px;
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      color: #80a8cc;
+      font-size: 40px;
+      margin: 20px 0px; }
+  header .search-box {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end; }
+    header .search-box .search-group {
+      width: 200px;
+      position: relative;
+      margin: 0px 15px; }
+      @media only screen and (max-width: 767px) {
+        header .search-box .search-group {
+          display: none; } }
+      header .search-box .search-group input {
+        width: 100%;
+        height: 40px;
+        border: 1px solid #d0d0d0;
+        border-radius: 25px;
+        text-indent: 10px;
+        color: #d0d0d0;
+        font-size: 16px; }
+      header .search-box .search-group i {
+        position: absolute;
+        right: 12px;
+        color: #d0d0d0;
+        top: 12px; }
+    header .search-box a.profile-image img {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%; }
+
+/*
+    Footer Style
+*/
+/* 
+    Created on : 16 Sep, 2016, 7:48:51 PM
+    Author     : Ishwar Katwe
+*/
+/*
+    Main Container
+*/
+/* 
+    Created on : 16 Sep, 2016, 7:48:04 PM
+    Author     : Ishwar Katwe
+*/
+.container {
+  padding: 10px 0px; }
+  .container .tabs {
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05);
+    margin: 30px 0px;
+    list-style: none;
+    padding: 0px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    background: #FFFFFF; }
+    .container .tabs li {
+      display: inline-block;
+      width: 25%;
+      text-align: center;
+      padding: 18px 0px;
+      cursor: pointer; }
+      .container .tabs li a {
+        text-decoration: none;
+        text-align: center; }
+        .container .tabs li a p {
+          margin: 0;
+          text-transform: uppercase;
+          color: #d3cec0;
+          padding: 1px 0px;
+          font-size: 18px; }
+          @media only screen and (max-width: 767px) {
+            .container .tabs li a p {
+              font-size: 10px; } }
+        .container .tabs li a b {
+          color: #5f5f5f;
+          font-size: 20px; }
+      .container .tabs li.active {
+        border-bottom: 4px solid #80a8cc; }
+  .container .posts {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05); }
+    .container .posts article {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      flex-direction: row;
+      padding: 25px;
+      border-bottom: 1px solid #eaeaea; }
+      .container .posts article figure.post-user {
+        margin: 0px;
+        padding: 10px 20px; }
+        .container .posts article figure.post-user img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%; }
+        @media only screen and (max-width: 767px) {
+          .container .posts article figure.post-user {
+            display: none; } }
+      .container .posts article .post-body .refresh {
+        margin-right: 10px;
+        text-decoration: none;
+        color: #acd373; }
+      .container .posts article .post-body .header {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        align-items: baseline;
+        padding: 5px 0px; }
+        .container .posts article .post-body .header h4 {
+          margin: 0px;
+          color: #5f5f5f; }
+        .container .posts article .post-body .header p {
+          margin: 0px;
+          color: #d0d0d0;
+          padding: 0px 2px; }
+        .container .posts article .post-body .header .timestamp {
+          color: #d0d0d0;
+          flex: 2;
+          text-align: right; }
+      .container .posts article .post-body .caption {
+        color: #5f5f5f;
+        margin: 0px; }
+      .container .posts article .post-body .video a {
+        text-decoration: none; }
+        .container .posts article .post-body .video a figure {
+          position: relative;
+          margin: 0px;
+          padding: 0px; }
+          .container .posts article .post-body .video a figure img {
+            width: 100%; }
+          .container .posts article .post-body .video a figure figcaption .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            line-height: 60px;
+            border-radius: 50%;
+            color: #FFFFFF;
+            -webkit-transition-timing-function: ease;
+            -moz-transition-timing-function: ease;
+            -ms-transition-timing-function: ease;
+            -o-transition-timing-function: ease;
+            transition-timing-function: ease;
+            -webkit-transition-duration: 0.35s;
+            -moz-transition-duration: 0.35s;
+            -ms-transition-duration: 0.35s;
+            -o-transition-duration: 0.35s;
+            transition-duration: 0.35s;
+            -webkit-transition-delay: 0s;
+            -moz-transition-delay: 0s;
+            -ms-transition-delay: 0s;
+            -o-transition-delay: 0s;
+            transition-delay: 0s;
+            -webkit-transition-property: background;
+            -moz-transition-property: background;
+            -ms-transition-property: background;
+            -o-transition-property: background;
+            transition-property: background; }
+            .container .posts article .post-body .video a figure figcaption .play-button i {
+              font-size: 18px; }
+        .container .posts article .post-body .video a:hover .play-button {
+          background: rgba(0, 0, 0, 0.8); }
+      .container .posts article .post-body .icon-footer {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        align-items: baseline;
+        padding: 10px 0px;
+        margin-top: 2px; }
+        .container .posts article .post-body .icon-footer a {
+          margin: 0px 10px;
+          text-decoration: none;
+          color: #d0d0d0; }
+          .container .posts article .post-body .icon-footer a:nth-child(1) {
+            margin-left: 0px; }
+          .container .posts article .post-body .icon-footer a.expand {
+            flex: 2;
+            text-align: right; }
+          .container .posts article .post-body .icon-footer a:hover {
+            color: #9d9d9d; }
+
+/*
+    Page Header Tabs
+*/
+/* 
+    Created on : 16 Sep, 2016, 7:48:51 PM
+    Author     : Ishwar Katwe
+*/
+/*
+    Posted Newfeeds 
+*/
+/* 
+    Created on : 16 Sep, 2016, 7:49:03 PM
+    Author     : Ishwar Katwe
+*/

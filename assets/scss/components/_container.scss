@@ -1,0 +1,180 @@
+/*
+    Main Container
+*/
+/* 
+    Created on : 16 Sep, 2016, 7:48:04 PM
+    Author     : Ishwar Katwe
+*/
+
+.container{
+    padding: 10px 0px;
+    .tabs{
+        @include box-shadow(0px, 0px, 0px, 1px, $shadow);
+        margin: 30px 0px;
+        list-style: none;
+        padding: 0px;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        background:$white;
+        li{
+            display: inline-block;
+            width: 25%;
+            text-align: center;
+            padding: 18px 0px;
+            cursor: pointer;
+            a{
+                text-decoration:none;
+                text-align: center;
+                p{
+                    margin: 0;
+                    text-transform: uppercase;
+                    color: #d3cec0;
+                    padding: 1px 0px;
+                    font-size: 18px;
+                    @include respond-to(xs){
+                        font-size: 10px;
+                    }
+                }
+                b{
+                    color:$dark-gray;
+                    font-size: 20px;
+                }
+            }
+            &.active
+            {
+                border-bottom: 4px solid $blue;
+            }
+        }
+    }
+
+    .posts{
+        background: $white;
+        @include box-shadow(0px, 0px, 0px, 1px, $shadow);
+        article{
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            flex-direction: row;
+            padding:25px;
+            border-bottom: 1px solid $divider-color;
+
+            figure.post-user{
+                margin: 0px;
+                padding: 10px 20px;
+                img{
+                    width:40px;
+                    height:40px;
+                    border-radius: 50%;
+                }
+                @include respond-to(xs){
+                    display: none;
+                }
+            }
+
+            .post-body{
+                .refresh{
+                    margin-right: 10px;
+                    text-decoration: none;
+                    color: #acd373;
+                }
+                .header{
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-flex-direction: row;
+                    flex-direction: row;
+                    align-items: baseline;
+                    padding: 5px 0px;
+                    h4{
+                        margin: 0px;
+                        color:$dark-gray;
+                    }
+                    p{
+                        margin: 0px;
+                        color:$gray;
+                        padding: 0px 2px;
+                    }
+
+                    .timestamp{
+                        color:$gray;
+                        flex: 2;
+                        text-align: right;
+                    }
+                }
+                .caption{
+                    color:$dark-gray;
+                    margin: 0px;
+                }
+                .video{
+                    a{
+                        text-decoration: none;
+
+                        figure{
+                            position: relative;
+                            margin: 0px;
+                            padding: 0px;
+
+                            img{
+                                width: 100%;
+                            }
+
+                            figcaption{
+                                .play-button{
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);  
+                                    width: 60px;
+                                    height: 60px;
+                                    text-align: center;
+                                    background: rgba(0, 0, 0, 0.6);
+                                    line-height: 60px;
+                                    border-radius: 50%;
+                                    color: $white;
+                                    @include animate(background);
+                                    i{
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:hover{
+                            .play-button{
+                                background: rgba(0, 0, 0, 0.8);
+                            }
+                        }
+                    }
+                }
+                .icon-footer{
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-flex-direction: row;
+                    flex-direction: row;
+                    align-items: baseline;
+                    padding: 10px 0px;
+                    margin-top: 2px;
+                    a{
+                        margin: 0px 10px;
+                        text-decoration:none;
+                        color:$gray;
+                        &:nth-child(1){
+                            margin-left: 0px;
+                        }
+
+                        &.expand{
+                            flex: 2;
+                            text-align: right;
+                        }
+
+                        &:hover{
+                            color:darken($gray,20%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

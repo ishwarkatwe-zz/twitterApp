@@ -1,0 +1,46 @@
+[
+    {
+        "image": "assets/img/user1.jpg",
+        "name": "Kerem Suer",
+        "alias": "@kerem",
+        "caption": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+        "refreshButton": "N",
+        "refreshCount": "20",
+        "video": "N",
+        "videoPlaceholder": "",
+        "date": "2m"
+    },
+    {
+        "image": "assets/img/user2.jpg",
+        "name": "AxelHerrmann",
+        "alias": "@axel_herrmann",
+        "caption": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+        "refreshButton": "Y",
+        "refreshCount": "",
+        "video": "N",
+        "videoPlaceholder": "",
+        "date": "1h"
+    },
+    {
+        "image": "assets/img/user1.jpg",
+        "name": "Kerem Suer",
+        "alias": "@kerem",
+        "caption": "",
+        "refreshButton": "N",
+        "refreshCount": "",
+        "video": "Y",
+        "videoPlaceholder": "assets/img/banner.jpg",
+        "date": "5h"
+    },
+    {
+        "image": "assets/img/user1.jpg",
+        "name": "Kerem Suer",
+        "alias": "@kerem",
+        "caption": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+        "refreshButton": "N",
+        "refreshCount": "",
+        "video": "N",
+        "videoPlaceholder": "",
+        "date": "Yesterday"
+    }
+]

@@ -1,0 +1,21 @@
+{
+    "name": "twitterApp",
+    "authors": [
+        "Ishwar Katwe <ishwar.katwe0816@gmail.com>"
+    ],
+    "description": "Twitter News Feed Application",
+    "main": "index.html",
+    "license": "MIT",
+    "homepage": "index.html",
+    "dependencies": {
+        "basscss": "^8.0.1",
+        "font-awesome": "fontawesome#^4.6.3"
+    },
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}
